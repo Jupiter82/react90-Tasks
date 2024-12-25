@@ -17,7 +17,7 @@ function SubmissionForm() {
         }
         console.log(users, "users")
         fetchedData()
-    })
+    }, [])
 
     const handleDelete = () => {
         try {
@@ -29,12 +29,14 @@ function SubmissionForm() {
     return (
         <div className='text-center'>
             <div className='w-[80rem] flex justify-end mt-2'>
-                <button
-                    type="button"
-                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
-                >
-                    + Add
-                </button>
+                <Link href={'submissionForm/create'}>
+                    <button
+                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                    >
+                        + Add
+                    </button>
+                </Link>
+
             </div>
             <table className="border-2 w-[80rem] mx-auto px-4">
                 <thead className="border-2">

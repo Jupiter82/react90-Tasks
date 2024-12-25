@@ -5,14 +5,34 @@
       "firstName": "jupiter",
       "lastName": "bade",
       "email": "jupiterbade@gmail.com",
-      "contact": 9841111111
+      "contact": 9841111111,
+      "gender": {
+        "male": true,
+        "female": false,
+        "other": false
+      },
+      "lang": {
+        "english": true,
+        "maths": true,
+        "physics": true
+      }
     },
     {
       "id": "2",
       "firstName": "Ram",
       "lastName": "Shrestha",
       "email": "ram@gmail.com",
-      "contact": 9841111111
+      "contact": 9841111111,
+      "gender": {
+        "male": true,
+        "female": false,
+        "other": false
+      },
+      "lang": {
+        "english": true,
+        "maths": true,
+        "physics": true
+      }
     }
   ]
 }
