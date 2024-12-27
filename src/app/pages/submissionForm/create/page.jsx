@@ -51,8 +51,24 @@ function create() {
                                 <label htmlFor="" className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Physics</label>
                             </div>
                         </div>
-                        <label className='text-[15px] block w-full mt-2 mb-1 text-left text-[#555] font-bold' htmlFor='firstname'>Enter URL*</label>
+                        <label className='text-[15px] block w-full mt-2 mb-1 text-left text-[#555] font-bold' htmlFor='URL'>Enter URL*</label>
                         <input className='block w-full p-2 box-border border border-[#ddd] rounder-sm text-[12px]' type='text' placeholder='Enter the mail' />
+                        <label className='text-[15px] block w-full mt-2 mb-1 text-left text-[#555] font-bold' htmlFor='firstname'>Select your choice</label>
+                        <select name='select' id="select" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Select your Ans</option>
+                            <optgroup label='Beginers'>
+                                <option value="1">HTML</option>
+                                <option value="2">CSS</option>
+                                <option value="3">JavaScript</option>
+                            </optgroup>
+                            <optgroup label='Advance'>
+                                <option value="1">React</option>
+                                <option value="2">Node</option>
+                                <option value="3">Express</option>
+                                <option value="4">MangoDB</option>
+                            </optgroup>
+                        </select>
+                        <label className='text-[15px] block w-full mt-2 mb-1 text-left text-[#555] font-bold' htmlFor='firstname'></label>
 
                         <div>
                             <button type="reset" value="reset" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" onClick={() => handleReset()}>Reset</button>
